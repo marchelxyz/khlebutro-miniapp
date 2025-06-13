@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  publicDir: 'public',
+  root: '.', // указывает, что index.html лежит в корне проекта
   build: {
     outDir: 'dist'
   }
